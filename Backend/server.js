@@ -1,20 +1,3 @@
-// const express = require("express");
-// const bodyParser = require("body-parser");
-// const jwt = require("jsonwebtoken");
-// const cors = require("cors");
-// const mongoDB = require("./db");
-// const users = require("./models/UserModel");
-// const listofevents = require("./models/Events");
-// const userevents = require("./models/UserRegistrations")
-// const middleware = require("./middleware");
-// const app = express();
-// const port = 5000;
-// mongoDB();
-// app.use(bodyParser.json({ limit: "50mb" }));
-// app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
-// app.use(express.json({ limit: "50mb" }));
-// app.use(cors({ origin: "*" }));
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const jwt = require("jsonwebtoken");
@@ -33,7 +16,12 @@ mongoDB();
 app.use(bodyParser.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
 app.use(express.json({ limit: "50mb" }));
-app.use(cors({ origin: "*" }));
+app.use(cors({ 
+  origin: "https://deploy-mern-1whq.vercel.app" ,
+  methods:["POST","GET","PUT"],
+  credentials:true
+
+}));
 
 
 app.get("/", async (req, res) => {
