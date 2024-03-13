@@ -1,0 +1,39 @@
+/* Default styles for larger screens */
+/* Example */
+
+.container-fluid {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+ 
+  h1 {
+    font-size: 3rem;
+    position: relative;
+    z-index: 1;
+  }
+  .lead {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+  }
+  
+  .btn {
+    padding: 10px 20px; /* Adjust the padding as needed */
+  }
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .content{
+        margin-top: 30px;
+    }
+    h1 {
+      font-size: 2rem; /* Adjust the font size as needed for smaller screens */
+    }
+  
+    .lead {
+      font-size: 1rem; /* Adjust the font size as needed for smaller screens */
+    }
+  
+    .btn {
+      padding: 3px 16px; /* Adjust the padding as needed for smaller screens */
+    }
+  }
+  
