@@ -1,10 +1,8 @@
 {
-    "version": 2,
-    "name": "EventEdge",
     "builds": [
-       { "src": "*.js", "use": "@vercel/node" }
+        { "src": "package.json", "use": "@vercel/static-build" }
     ],
     "routes": [
-       { "src": "/(.*)", "dest": "/" }
+        { "src": "/(.*)", "dest": "/index.html" }
     ]
- }
+}
