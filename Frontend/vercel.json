@@ -1,6 +1,4 @@
 {    
-    "version": 2,
-    "name": "EventEdge",
     "builds": [
        { "src": "*.js", "use": "@vercel/node" }
     ],
