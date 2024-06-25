@@ -1,6 +1,6 @@
 {    
     "builds": [
-       { "src": "*.js", "use": "@vercel/node" }
+       { "src": "*.js", "use": "@vercel/react" }
     ],
     "rewrites": [
        { "source": "/(.*)", "destination": "/" }
