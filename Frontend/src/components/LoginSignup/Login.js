@@ -22,7 +22,7 @@ function Login() {
   const handleLogin = (e) => {
     try {
       e.preventDefault();
-      axios.post("http://localhost:5000/signin", data).then((res) => {
+      axios.post("https://event-edge-frontend.vercel.app/signin", data).then((res) => {
         localStorage.setItem("token", res.data.token);
         setAuth(true);
       }).catch((error)=>{
