@@ -12,7 +12,7 @@ import UserProfile from './UserProfile';
 const Dashboard = () => {
   const [data,setData] = useState([]);
   useEffect(()=>{
-    axios.get('http://localhost:5000/myprofile',{
+    axios.get('https://event-edge-backend.vercel.app/myprofile',{
       headers:{
         'x-token':localStorage.getItem('token')
       }
