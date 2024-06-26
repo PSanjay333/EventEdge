@@ -38,7 +38,7 @@ function SignUp() {
 
   const handleSignUp = (e) => {
     e.preventDefault();
-    axios.post("https://event-edge-frontend.vercel.app/signup", data).then((res) => {
+    axios.post("https://event-edge-backend.vercel.app/signup", data).then((res) => {
       if(res.data.message==="SignUp Successful"){
         setMessage("SignUp Successful")
         setModalShow(true)
